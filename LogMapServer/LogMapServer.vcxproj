@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{995710a1-6687-4812-9be0-bcc1aad2e113}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>LogMapServer</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>/home/cc/projects/</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)\..\..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>Interface;mem/include;proto;include;/usr/local/include/google/protobuf;/usr/local/include/boost;/usr/local/include/mqtt/;/usr/local/include/boost/pool;Http;HttpInclude;json;lib_json;tcp;data;Service;version;MQTT;redis;/usr/local/curl/include;md5;polarssl/include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="data\DeviceAlarmManager.h" />
+    <ClInclude Include="data\DeviceAlarmObject.h" />
+    <ClInclude Include="data\DeviceUuidManager.h" />
+    <ClInclude Include="data\DeviceUuidObject.h" />
+    <ClInclude Include="data\JgPushRecordManager.h" />
+    <ClInclude Include="data\JgPushRecordObject.h" />
+    <ClInclude Include="data\UseRecordManager.h" />
+    <ClInclude Include="data\UseRecordObject.h" />
+    <ClInclude Include="data\WechatManager.h" />
+    <ClInclude Include="data\WechatObject.h" />
+    <ClInclude Include="data\WechatRoomObject.h" />
+    <ClInclude Include="HttpInclude\mongoose.h" />
+    <ClInclude Include="Http\HttpClientManager.h" />
+    <ClInclude Include="Http\HttpServer.h" />
+    <ClInclude Include="Http\HttpServerManager.h" />
+    <ClInclude Include="include\AnalsysNetData.h" />
+    <ClInclude Include="include\Cmd_Head.h" />
+    <ClInclude Include="include\Crc32.h" />
+    <ClInclude Include="include\DataBaseObject.h" />
+    <ClInclude Include="include\DataFuntionMap.h" />
+    <ClInclude Include="include\Define.h" />
+    <ClInclude Include="include\Event.h" />
+    <ClInclude Include="include\EventManager.h" />
+    <ClInclude Include="include\LConfigManager.h" />
+    <ClInclude Include="include\ServerHead.h" />
+    <ClInclude Include="include\ServerManager.h" />
+    <ClInclude Include="include\StructDefine.h" />
+    <ClInclude Include="include\SystemMessage.h" />
+    <ClInclude Include="include\TmallManager.h" />
+    <ClInclude Include="include\TmallObject.h" />
+    <ClInclude Include="include\XCode.h" />
+    <ClInclude Include="include\_Mutex.h" />
+    <ClInclude Include="Interface\IAnalysisPacket.h" />
+    <ClInclude Include="Interface\IMysqlInterface.h" />
+    <ClInclude Include="Interface\LogInterface.h" />
+    <ClInclude Include="mem\include\DataObject.h" />
+    <ClInclude Include="mem\include\PoolObject.h" />
+    <ClInclude Include="MQTT\MqttManager.h" />
+    <ClInclude Include="MQTT\MqttObject.h" />
+    <ClInclude Include="polarssl\include\polarssl\base64.h" />
+    <ClInclude Include="polarssl\include\polarssl\check_config.h" />
+    <ClInclude Include="polarssl\include\polarssl\config.h" />
+    <ClInclude Include="polarssl\include\polarssl\config_rsa.h" />
+    <ClInclude Include="polarssl\include\polarssl\md5.h" />
+    <ClInclude Include="polarssl\include\polarssl\platform.h" />
+    <ClInclude Include="polarssl\include\polarssl\sha256.h" />
+    <ClInclude Include="proto\DeviceVersion.pb.h" />
+    <ClInclude Include="proto\ServerProtocol.pb.h" />
+    <ClInclude Include="redis\RedisClientManager.h" />
+    <ClInclude Include="redis\RedisObject.h" />
+    <ClInclude Include="Service\ServiceManager.h" />
+    <ClInclude Include="Service\ServiceObject.h" />
+    <ClInclude Include="tcp\GroupPackageEngine.h" />
+    <ClInclude Include="tcp\ServerParamObject.h" />
+    <ClInclude Include="tcp\SocketService.h" />
+    <ClInclude Include="tcp\TcpSocketServer.h" />
+    <ClInclude Include="version\VersionManager.h" />
+    <ClInclude Include="version\VersionObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="data\DeviceAlarmManager.cpp" />
+    <ClCompile Include="data\DeviceUuidManager.cpp" />
+    <ClCompile Include="data\JgPushRecordManager.cpp" />
+    <ClCompile Include="data\UseRecordManager.cpp" />
+    <ClCompile Include="data\WechatManager.cpp" />
+    <ClCompile Include="HttpInclude\mongoose.c" />
+    <ClCompile Include="Http\HttpClientManager.cpp" />
+    <ClCompile Include="Http\HttpServer.cpp" />
+    <ClCompile Include="Http\HttpServerManager.cpp" />
+    <ClCompile Include="mem\src\DataObject.cpp" />
+    <ClCompile Include="MQTT\MQTTManager.cpp" />
+    <ClCompile Include="polarssl\library\base64.c" />
+    <ClCompile Include="polarssl\library\md5.c" />
+    <ClCompile Include="polarssl\library\sha256.c" />
+    <ClCompile Include="proto\DeviceVersion.pb.cc" />
+    <ClCompile Include="proto\ServerProtocol.pb.cc" />
+    <ClCompile Include="redis\RedisClientManager.cpp" />
+    <ClCompile Include="redis\RedisObject.cpp" />
+    <ClCompile Include="Service\ServiceManager.cpp" />
+    <ClCompile Include="Service\ServiceObject.cpp" />
+    <ClCompile Include="src\AnalsysNetData.cpp" />
+    <ClCompile Include="src\Crc32.cpp" />
+    <ClCompile Include="src\DataBaseObject.cpp" />
+    <ClCompile Include="src\DataFuntionMap.cpp" />
+    <ClCompile Include="src\Event.cpp" />
+    <ClCompile Include="src\EventManager.cpp" />
+    <ClCompile Include="src\LConfigManager.cpp" />
+    <ClCompile Include="src\Server.cpp" />
+    <ClCompile Include="src\ServerManager.cpp" />
+    <ClCompile Include="src\SystemMessage.cpp" />
+    <ClCompile Include="src\TmallManager.cpp" />
+    <ClCompile Include="src\XCode.cpp" />
+    <ClCompile Include="src\_Mutex.cpp" />
+    <ClCompile Include="tcp\GroupPackageEngine.cpp" />
+    <ClCompile Include="tcp\SocketService.cpp" />
+    <ClCompile Include="version\VersionManager.cpp" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>/usr/local/lib;$(RemoteRootDir)/../bin/$(Platform)/$(Configuration);/usr/local/curl/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LibraryDependencies>LLog;LSql;mysqlclient;iconv;protoc;protobuf;LTcps;LProtocolAnalyze;pthread;json;uuid;paho-mqtt3c;hiredis;curl</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

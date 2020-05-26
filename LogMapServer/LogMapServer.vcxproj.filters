@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{753e2e04-eb93-4dce-84d1-a5e1e00db635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9e8602d0-ba65-4d91-a1fe-edc3fea678e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{1a605334-38b0-4a32-acbf-96805d31a1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{0675a535-454d-45d6-86af-2cb0cb5c336f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem">
+      <UniqueIdentifier>{1a2cfe5e-9a4e-4c10-af21-77e92e9768b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tcp">
+      <UniqueIdentifier>{9687ebc6-dd33-4d2b-9d23-5c1ada92adcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proto">
+      <UniqueIdentifier>{02de5b59-9da3-444f-a49d-f8a85bccd66a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{d277eb68-54ad-40a6-9290-06d008b2f2d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Service">
+      <UniqueIdentifier>{9fcb5673-2dae-4bf2-959a-214dfa3b7cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Version">
+      <UniqueIdentifier>{81414817-cf2b-427c-bfb6-b79ee9453a7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mqtt">
+      <UniqueIdentifier>{9737f0ba-9cd6-4911-a4de-74eeebb8cc2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="redis">
+      <UniqueIdentifier>{e1f23d9f-4c92-45c0-9092-e8611d05f486}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="polarssl">
+      <UniqueIdentifier>{ff5a30b6-33ed-493a-a3da-f971e6fda649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tmall">
+      <UniqueIdentifier>{538ca623-2c1b-4dea-a78a-fd9e22c84e94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\_Mutex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AnalsysNetData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cmd_Head.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataFuntionMap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EventManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LConfigManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ServerHead.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ServerManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SystemMessage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XCode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Http\HttpServer.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="Http\HttpServerManager.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpInclude\mongoose.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IAnalysisPacket.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IMysqlInterface.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\LogInterface.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\include\DataObject.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\include\PoolObject.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="proto\ServerProtocol.pb.h">
+      <Filter>Proto</Filter>
+    </ClInclude>
+    <ClInclude Include="data\JgPushRecordManager.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\JgPushRecordObject.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataBaseObject.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp\GroupPackageEngine.h">
+      <Filter>tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp\ServerParamObject.h">
+      <Filter>tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp\SocketService.h">
+      <Filter>tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp\TcpSocketServer.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\ServiceManager.h">
+      <Filter>Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\ServiceObject.h">
+      <Filter>Service</Filter>
+    </ClInclude>
+    <ClInclude Include="data\DeviceAlarmManager.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\DeviceAlarmObject.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\UseRecordManager.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\UseRecordObject.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Define.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\StructDefine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="proto\DeviceVersion.pb.h">
+      <Filter>Proto</Filter>
+    </ClInclude>
+    <ClInclude Include="version\VersionObject.h">
+      <Filter>Version</Filter>
+    </ClInclude>
+    <ClInclude Include="MQTT\MqttManager.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="MQTT\MqttObject.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="version\VersionManager.h">
+      <Filter>Version</Filter>
+    </ClInclude>
+    <ClInclude Include="redis\RedisClientManager.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="redis\RedisObject.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="Http\HttpClientManager.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="polarssl\include\polarssl\md5.h">
+      <Filter>polarssl</Filter>
+    </ClInclude>
+    <ClInclude Include="data\DeviceUuidObject.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\DeviceUuidManager.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="polarssl\include\polarssl\config.h">
+      <Filter>polarssl</Filter>
+    </ClInclude>
+    <ClInclude Include="polarssl\include\polarssl\config_rsa.h">
+      <Filter>polarssl</Filter>
+    </ClInclude>
+    <ClInclude Include="polarssl\include\polarssl\check_config.h">
+      <Filter>polarssl</Filter>
+    </ClInclude>
+    <ClInclude Include="polarssl\include\polarssl\platform.h">
+      <Filter>polarssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Crc32.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TmallManager.h">
+      <Filter>Tmall</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TmallObject.h">
+      <Filter>Tmall</Filter>
+    </ClInclude>
+    <ClInclude Include="data\WechatObject.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\WechatRoomObject.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\WechatManager.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="polarssl\include\polarssl\sha256.h">
+      <Filter>polarssl</Filter>
+    </ClInclude>
+    <ClInclude Include="polarssl\include\polarssl\base64.h">
+      <Filter>polarssl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\_Mutex.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnalsysNetData.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataFuntionMap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Event.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LConfigManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Server.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ServerManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SystemMessage.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XCode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Http\HttpServer.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="Http\HttpServerManager.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpInclude\mongoose.c">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="mem\src\DataObject.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="proto\ServerProtocol.pb.cc">
+      <Filter>Proto</Filter>
+    </ClCompile>
+    <ClCompile Include="data\JgPushRecordManager.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBaseObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp\GroupPackageEngine.cpp">
+      <Filter>tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp\SocketService.cpp">
+      <Filter>tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\ServiceManager.cpp">
+      <Filter>Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\ServiceObject.cpp">
+      <Filter>Service</Filter>
+    </ClCompile>
+    <ClCompile Include="data\DeviceAlarmManager.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\UseRecordManager.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="proto\DeviceVersion.pb.cc">
+      <Filter>Proto</Filter>
+    </ClCompile>
+    <ClCompile Include="MQTT\MQTTManager.cpp">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="version\VersionManager.cpp">
+      <Filter>Version</Filter>
+    </ClCompile>
+    <ClCompile Include="redis\RedisClientManager.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="redis\RedisObject.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="Http\HttpClientManager.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="polarssl\library\md5.c">
+      <Filter>polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="data\DeviceUuidManager.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crc32.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TmallManager.cpp">
+      <Filter>Tmall</Filter>
+    </ClCompile>
+    <ClCompile Include="data\WechatManager.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="polarssl\library\sha256.c">
+      <Filter>polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="polarssl\library\base64.c">
+      <Filter>polarssl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
